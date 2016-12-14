@@ -1,7 +1,7 @@
 .wrapper_with_padding
   #doc_show
-    %h1.title= @doc.title
-    %p= simple_format(@doc.content)
+    h1.title= @doc.title
+    p= simple_format(@doc.content)
 
     .buttons
       = link_to "Fix Doc", edit_doc_path, class: "button"
